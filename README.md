@@ -9,7 +9,7 @@ A minimal **x402** facilitator for Solana that:
 
 ---
 
-## ✨ Features
+## Features
 - Devnet **USDC** pay-per-request
 - Verifies SPL **Transfer/TransferChecked** to your **recipient ATA**
 - Proxies upstream to **your PREMIUM_RPC_URL**
@@ -17,7 +17,7 @@ A minimal **x402** facilitator for Solana that:
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 - **Node 18+** (or Bun 1.3+)  
 - A **premium RPC** URL (e.g. Helius devnet)
 - A **recipient** Solana wallet to receive USDC payments
@@ -25,7 +25,7 @@ A minimal **x402** facilitator for Solana that:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 git clone https://github.com/blazerianone/neverfail-wallet-facilitator.git
@@ -54,7 +54,7 @@ Server listening on http://127.0.0.1:3001/rpc
 
 ---
 
-## 🔌 Endpoint
+## Endpoint
 
 **POST** `/rpc` → JSON-RPC proxy guarded by x402 payment.
 
@@ -115,7 +115,7 @@ If valid, the server:
 
 ---
 
-## 🧪 Curl Smoke Test
+## Curl Smoke Test
 
 ```bash
 # Expect 402 with accepts
@@ -126,7 +126,7 @@ curl -i -X POST http://localhost:3001/rpc \
 
 ---
 
-## 🔧 Environment
+## Environment
 
 See **.env.example**; copy to **.env** and edit.
 
@@ -144,14 +144,14 @@ See **.env.example**; copy to **.env** and edit.
 
 ---
 
-## 🛡️ Notes
+## Notes
 
 * The verifier checks **SPL Transfer/TransferChecked** and destination equals your **recipient ATA** for the mint, with `amount >= PRICE_USDC_BASE`.
 * For production, consider stricter checks (fee payer, memo, nonce, freshness, replay protection).
 
 ---
 
-## 🧑‍💻 PM2 (optional)
+## PM2 (optional)
 
 ```bash
 npm i -g pm2
@@ -161,5 +161,5 @@ pm2 save
 
 ---
 
-## 📝 License
-[MIT](./LICENSE) © 2025 blazerianone
+## License
+[MIT](./LICENSE) © 2025 NeverFail Wallet
