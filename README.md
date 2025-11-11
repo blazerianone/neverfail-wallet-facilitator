@@ -162,5 +162,4 @@ pm2 save
 ---
 
 ## 📝 License
-
-MIT
+[MIT](./LICENSE) © 2025 blazerianone
